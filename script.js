@@ -49,7 +49,7 @@ if (window.location.pathname.includes("final.html")) {
     setInterval(() => {
         const heart = document.createElement("div");
         heart.classList.add("heart");
-        heart.innerHTML = "💖";
+        heart.innerHTML = "💜";
 
         heart.style.left = Math.random() * 100 + "vw";
         heart.style.animationDuration = (Math.random() * 3 + 4) + "s";
