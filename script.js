@@ -62,3 +62,15 @@ if (window.location.pathname.includes("final.html")) {
 
     }, 500);
             }
+window.addEventListener("load", () => {
+  const music = document.getElementById("bgMusic");
+  if (!music) return;
+
+  music.play()
+    .then(() => {
+      music.muted = false;
+    })
+    .catch(() => {
+      console.log("Autoplay blocked (mobile browsers).");
+    });
+});
